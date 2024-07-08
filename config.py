@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "29759992"))
 API_HASH = os.environ.get("API_HASH", "61f150cdca64b2916fa499d107393140")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002077715264"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002220751997"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "5787502520"))
@@ -32,15 +32,15 @@ DB_URI = "mongodb+srv://susantamusic:susantabhan@cluster0.5pwi1py.mongodb.net/?r
 DB_NAME = os.environ.get("DATABASE_NAME", "filesharexbot")
 
 SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "inshorturl.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "1c028cc8fe7d0764eed4ab12bb222899ed8fbac4")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "5a57d0a0e07f926a233dc12b2218460ffca202c7")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 36000)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID","gojfsi/2")
 
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002000182555"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002088960198"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002137818418"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "0"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -48,7 +48,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "5787502520 6769369582").split()):
+    for x in (os.environ.get("ADMINS", "5787502520 6769369582 5615274672").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
