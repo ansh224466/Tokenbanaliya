@@ -8,6 +8,8 @@ import re
 import string
 import time
 
+import pyrogram.utils
+pyrogram.utils.MIN_CHANNEL_ID = 
 from pyrogram import Client, filters, __version__
 from pyrogram.enums import ParseMode
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery
