@@ -25,7 +25,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002101559002"))
 OWNER_ID = int(os.environ.get("OWNER_ID", "7143727843"))
 
 #Port
-PORT = os.environ.get("PORT", "3057")
+PORT = os.environ.get("PORT", "3021")
 
 #Database 
 DB_URI = "mongodb+srv://susantamusic:susantabhan@cluster0.5pwi1py.mongodb.net/?retryWrites=true&w=majority"
@@ -47,7 +47,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nHi there! I'm File Share Bot Made By Empire_756. I Can Store Private Files In Specified Channel And Other Users Can Access It From Special Link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "7143727843").split()):
+    for x in (os.environ.get("ADMINS", "7143727843 6630667523").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
